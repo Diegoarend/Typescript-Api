@@ -9,6 +9,8 @@
     "start:dev": "ts-node-dev 'src/index.ts'",
     "lint": "eslint ./src ./test --ext .ts",
     "lint:fix": "eslint ./src ./test --ext .ts --fix",
+    "style:check": "prettier --check src/**/*.ts test/**/*.ts",
+    "style:fix": "prettier --write src/**/*.ts test/**/*.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
     "test:functional": "jest --projects ./test --runInBand"
   },
@@ -25,6 +27,7 @@
     "@typescript-eslint/parser": "^3.9.1",
     "eslint": "^7.7.0",
     "jest": "^26.0.1",
+    "prettier": "^2.1.1",
     "supertest": "^4.0.2",
     "ts-jest": "^26.0.0",
     "ts-node-dev": "^1.0.0-pre.60",
